@@ -4,16 +4,16 @@ public class ExerciceBoucles1 {
     public static void main(String[] args) {
 
         for (int iteration = 0; iteration <= 5; iteration++) {
-            System.out.println("Boucle for, iteration " + iteration);
             if (iteration == 2) {
-                iteration += 1;
-
+                continue;
             }
+            System.out.println("Boucle for, iteration " + iteration);
+
         }
 
         int iiteration = 5;
         while (iiteration < 10) {
-                ++iiteration;
+            ++iiteration;
             System.out.println("Boucle while, iteration" + iiteration);
         }
 
@@ -21,7 +21,8 @@ public class ExerciceBoucles1 {
         do {
             System.out.println("Boucle do-while, iteration " + iiiteration);
             ++iiiteration;
-        } while (iiiteration <= 15);{ 
-    }
+        } while (iiiteration <= 15);
+        {
+        }
     }
 }
