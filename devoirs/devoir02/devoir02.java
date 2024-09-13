@@ -8,6 +8,15 @@ public class devoir02 {
         int reservoirB = 0;
         int remplissage = (int) (Math.random() * (8 - 1 + 1) ) + 1 ;
             System.out.println("il y a 8 litres à remplir");
-        
+        while (reservoirA < 3) {
+            System.out.println("Remplissage du reservoir A...");
+            ++reservoirA;
+            System.out.println("Le reservoir A : " + reservoirA + ", le reservoir B : " + reservoirB);
+        }
+        while (reservoirB < 2) {
+            System.out.println("Remplissage du reservoir B...");
+            ++reservoirB;
+            System.out.println("Le reservoir A : " + reservoirA + ", le reservoir B : " + reservoirB);
+    } System.out.println("Remplissage terminé!");
+        }
     }
-}
