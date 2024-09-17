@@ -16,6 +16,8 @@ public class devoir01 {
         if (estmajeur) {
             System.out.println("Je suis majeur");
         }
-        else {System.out.println("Je suis mineur");}
+        else {System.out.println("Je suis mineur");
+            
+        }
     }
 }
