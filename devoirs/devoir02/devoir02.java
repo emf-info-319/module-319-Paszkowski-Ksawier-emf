@@ -12,7 +12,7 @@ public class devoir02 {
             System.out.println("Remplissage du reservoir A...");
             ++reservoirA;
             System.out.println("Le reservoir A : " + reservoirA + ", le reservoir B : " + reservoirB);
-        }d
+        }
         while (reservoirB < 5) {
             System.out.println("Remplissage du reservoir B...");
             ++reservoirB;
