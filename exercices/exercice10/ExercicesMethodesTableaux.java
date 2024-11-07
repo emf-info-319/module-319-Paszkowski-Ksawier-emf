@@ -11,8 +11,8 @@ public class ExercicesMethodesTableaux {
         tab7(2);
         tab9(0);
         tab10(0);
-        tab11(5.5);
-        tab12(4);
+       // tab11(5.5);
+       // tab12(4);
     }
 
     public static void tab1(int bite) {
@@ -28,7 +28,7 @@ public class ExercicesMethodesTableaux {
     public static void tab3(int bober) {
         int[] bobr = new int[14];
         for (int i = 0; i < bobr.length; i++) {
-            bobr[i] = (int) (Math.random() * 10) + 1;
+            bobr[i] = (int) Math.random() *(10 + 1) - 1;
         }
         System.out.println("La case 3 = " + bobr[0]);
     }
@@ -91,9 +91,9 @@ public class ExercicesMethodesTableaux {
         }
     }
 
-    public static double tab11(double change) {
-double = 
-    }
+    //public static double tab11(double change) {
+//double = -2;
+   // }
 
     public static void tab12(int[] Occ, int search) {
         int pos = -1;

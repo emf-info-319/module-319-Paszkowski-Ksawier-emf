@@ -15,7 +15,7 @@ public class Paszkowski {
         for (int i = 0; i < noteObtenues.length; i++) {
             noteObtenues[i] = (int) (Math.random() * (NOTE_MAX - NOTE_MIN + 1) + NOTE_MIN);
             int noteFinal = (noteObtenues[i]);
-totalNote = (totalNote + noteObtenues[i]);
+            totalNote = (totalNote + noteObtenues[i]);
             switch (noteFinal) {
                 case 4:// si 4 est = a note alors sout ...
                     System.out.println("La note obtenue est " + noteObtenues[i] + " : suffisant");
@@ -30,7 +30,7 @@ totalNote = (totalNote + noteObtenues[i]);
                     System.out.println("La note obtenue est " + noteObtenues[i] + ": insuffisant");
                     break;
             }
-            
+
         }
 
         double moyenne = totalNote / NBRE_NOTE;
