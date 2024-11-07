@@ -7,15 +7,12 @@ public class ExercicesMethodesTableaux {
 
         tab4(4);
         tab5(10);
-        tab6(2);
+        tab6(5);
         tab7(2);
-        tab8(10);
         tab9(0);
         tab10(0);
-        tab11(0);
-        tab12(0);
-        tab13(0);
-
+        tab11(5.5);
+        tab12(4);
     }
 
     public static void tab1(int bite) {
@@ -44,7 +41,7 @@ public class ExercicesMethodesTableaux {
     }
 
     public static void tab5(int wkawaaka) {
-        System.out.println("ntm fdp");
+        System.out.println("rrrrr");
     }
 
     public static void tab6(int jean) {
@@ -54,15 +51,17 @@ public class ExercicesMethodesTableaux {
 
     public static void tab7(int beer) {
         int max = Math.max(15, 2);
-        System.out.println("Le nombre Max est : "+ max);
+        System.out.println("Le nombre Max est : " + max);
     }
 
-    public static void tab8(int many) {
-        int[] may = new int[14];
+    public static void tab8(int many, int value) {
+        int[] may = new int[10];
         for (int i = 0; i < may.length; i++) {
-            may[i] = (int) (Math.random() * 10) + 1;
-            System.out.println("Le nombre est" +"fois dans le tableau");
-            // pas compris comment faire
+            if (may[i] == value) {
+                many++;
+            }
+            System.out.println("Le nombre est" + "fois dans le tableau");
+            // pas compris
         }
     }
 
@@ -74,7 +73,7 @@ public class ExercicesMethodesTableaux {
         int[] som = new int[nOtab];
         for (int i = 0; i < som.length; i++) {
             som[i] = (int) (Math.random() * (MAX - MIN + 1) + MIN);
-            tot = (tot + som[i]); 
+            tot = (tot + som[i]);
         }
     }
 
@@ -86,18 +85,24 @@ public class ExercicesMethodesTableaux {
         int[] som = new int[nOtab];
         for (int i = 0; i < som.length; i++) {
             som[i] = (int) (Math.random() * (MAX - MIN + 1) + MIN);
-            tot = (tot + som[i]); 
+            tot = (tot + som[i]);
             int moyenne = tot / nOtab;
-            System.out.println("La moyenne est "+ moyenne);
+            System.out.println("La moyenne est " + moyenne);
         }
     }
 
-    public static void tab11(int bober) {
-
+    public static double tab11(double change) {
+double = 
     }
 
-    public static void tab12(int bober) {
-
+    public static void tab12(int[] Occ, int search) {
+        int pos = -1;
+        for (int i = 0; i < Occ.length; i++) {
+            if (Occ[i] == search) {
+                pos = i;
+                break;
+            }
+        }
     }
 
     public static void tab13(int bober) {
