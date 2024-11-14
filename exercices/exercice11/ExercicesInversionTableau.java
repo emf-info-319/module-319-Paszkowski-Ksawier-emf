@@ -12,16 +12,17 @@ public class ExercicesInversionTableau {
 
         }
 
-        int[] tableauFinal = new int[4];
+        int[] tableauFinal = inverseTableau(tableauInitial);
         inverseTableau(tableauInitial);
-        System.out.println("lalalala" + tableauFinal);
+        System.out.println("Le tableau final : " + tableauFinal);
     }
 
-    public static int[] inverseTableau(int[] tableauInitial) {
-        int taille = tableauInitial.length;
+    public static int[] inverseTableau(int[] tab) {
+        int[] inverseTableau =new int [tab.length];
         for (int i = 0; i < tableauInitial.length; i++) {
-            inverseTableau(tableauInitial) = tableauInitial[i--];
+            inverseTableau[i] = tab[tab.length - 1 - i];
         }
+        return inverseTableau;
     }
 
 }
